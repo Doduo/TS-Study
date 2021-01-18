@@ -1,3 +1,1 @@
-let num:number = 123
-
-document.title = 'wb'
+import'./example/basic-type'
