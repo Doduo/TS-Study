@@ -1,11 +1,11 @@
 // 1.布尔类型
 let bool: boolean
 bool = true
-// bool = 123
+// bool = 123 // 不能将类型“number”分配给类型“boolean”
 
 // 2.数值类型
 let num: number = 123
-// num = 'abc'
+// num = 'abc' // 不能将类型“string”分配给类型“number”
 
 num = 0b1111011 // 2进制123
 num = 0o173 // 8进制123 
@@ -15,7 +15,7 @@ num = 0x7b // 16 进制123
 let str: string
 str = 'abc'
 str = `数值是${num}`
-console.log(str)
+
 
 // 4.数组类型
 // [1,2,3]
@@ -103,7 +103,11 @@ function getObject(obj: object): void {
 getObject(obj2)
 
 // 类型断言
-// 两种写法：1.<string> xxx;2. xxx as string
+/**
+ * 两种写法
+ * 1. <string> xxx;
+ * 2. xxx as string
+ */
 /*
 const getLength = target => {
     if (target.length || target.length === 0) {
