@@ -80,18 +80,18 @@ let addFunction2 = (x: number, y: number = 3) => x + y
 
 // 三、重载
 // 函数重载只能用function来定义,不能使用接口和别名来定义
-function handleData(x: string): string[] // 函数重载
-function handleData(x: number): number[] // 函数重载
-// 函数实体
-function handleData(x: any): any {
-    if (typeof x === 'string') {
-        return x.split('')
-    } else {
-        return x.toString().split('').map((item) => Number(item))
-    }
-}
-console.log(handleData('abc')); // ["a","b","c"]
-console.log(handleData(123)); // [1,2,3]
+// function handleData(x: string): string[] // 函数重载
+// function handleData(x: number): number[] // 函数重载
+// // 函数实体
+// function handleData(x: any): any {
+//     if (typeof x === 'string') {
+//         return x.split('')
+//     } else {
+//         return x.toString().split('').map((item) => Number(item))
+//     }
+// }
+// console.log(handleData('abc')); // ["a","b","c"]
+// console.log(handleData(123)); // [1,2,3]
 
 
 
