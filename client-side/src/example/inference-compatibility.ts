@@ -133,9 +133,9 @@ let arr55: Array<number | string> = [1, 'a']
 // animal = food // error 属性“name”的类型不兼容
 
 // 泛型
-interface Data<T> {
-    data: T
-}
-let data1: Data<number>
-let data2: Data<string>
-data1 = data2 // 类型不兼容
+// interface Data<T> {
+//     data: T
+// }
+// let data1: Data<number>
+// let data2: Data<string>
+// data1 = data2 // 类型不兼容

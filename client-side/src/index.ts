@@ -4,4 +4,5 @@
 // import './example/es6-class-1.js'
 // import './example/es6-class-2.js'
 // import './example/enum'
-import './example/inference-compatibility'
+// import './example/inference-compatibility'
+import './example/advanced-type-1'
